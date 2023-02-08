@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+   <meta charset="utf-8">
+   <title>Admin</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+</head>
+
+<body>
+   <div class="imgg admin"></div>
+   <div class="box" id="heading">
+      <h1 class="ph1">Users details‍</h1>
+   </div>
+
+   <div class="box">
+
+      <form action="/admin" method="post">
+         {% for user in users %}
+         <div class="item">
+
+            <p class="pp"> Name: {{user.name}} <br />Email: {{ user.email }}<br />Password: {{user.password}}</p>
+
+         </div>
+         {% endfor %}
+      </form>
+
+   </div>
+   <a class="btn btn-secondary btn-lg btnd" href="/delete" role="button">Remove</a>
+   <a class="btn btn-primary btn-lg" href="/edit" role="button">Edit</a>
+   <a class="btn btn-light btn-sm pb" href="/ " role="button">Back</a>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+body {
+   font-family: 'Just Another Hand', cursive;
+   background-color: #050505;
+   width: 100%;
+   background-position: top;
+   /* background-repeat: no-repeat; */
+   background-size: cover;
+   margin: 0;
+}
+
+
+h1.num {
+   color: #fff;
+   font-size: 5rem;
+   padding: 4rem;
+}
+
+/* forms css part */
+h1.ph1 {
+   color: #fff;
+   padding: 10px;
+}
+
+.centered {
+   padding-top: 200px;
+   text-align: center;
+   color: white;
+}
+
+/* admin */
+.btnd{
+   margin-left: 52rem;
+}
+
+p.pp {
+   margin: 0;
+   padding: 20px;
+   font-size: 20px;
+   font-weight: 200;
+}
+
+form.item {
+   text-align: center;
+   margin-left: 20px;
+}
+
+.item {
+   min-height: 70px;
+   display: flex;
+   align-items: center;
+   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.box {
+   max-width: 400px;
+   margin: 10px auto;
+   background: #827397;
+   border-radius: 5px;
+   box-shadow: 10px 10px 20px 5px #827397;
+}
+
+.box1{
+   background: #0AA1DD;
+   box-shadow: 10px 10px 20px 5px #0AA1DD;
+}
+
+.box2{
+   background: #A91079;
+   box-shadow: 10px 10px 20px 5px #A91079;
+}
+
+.design1{
+   background-color: #2EB086;
+}
+
+.item:last-child {
+   border-bottom: 0;
+}
+
+input:checked+p {
+   text-decoration: line-through;
+   text-decoration-color: #050505;
+}
+
+input[type="checkbox"] {
+   margin: 20px;
+}
+
+#wrapper{
+   border: 1px solid #888;
+   display: inline-block;
+   padding:20px;
+   color: white;
+}
+
+.wrap{
+   position: center;
+   margin-left: 40rem;
+   margin-top: 10rem;
+}
+
+
+
+/* .admin{
+   background: url(../images/admin.jpg);
+} */
+
+
+.imgg{
+   background-repeat: no-repeat;
+   background-size: auto;
+   background-size:100% 100%;
+   -webkit-filter: blur(4px);
+   -moz-filter: blur(4px);
+   -o-filter: blur(4px);
+   -ms-filter: blur(5px);
+   filter: blur(10px);
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   z-index: -1;
+ }

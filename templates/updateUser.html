@@ -1,0 +1,34 @@
+<html lang="en" dir="ltr">
+
+<head>
+   <meta charset="utf-8">
+   <title>Register</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/registration.css') }}">
+</head>
+
+<body>
+   <div class="imgg sec"></div>
+   <div class="container mt-5 lr">
+      <h1 class="ph1">Update User</h1>
+
+
+                  <!-- Makes POST request to /login route -->
+                  <form action="/updateUser" method="POST">
+                     <div class="form-group">
+                        <label for="name">User Name</label>
+                        <input type="name" class="form-control" name="name">
+                     </div>
+                     <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" name="email">
+                     </div>
+                     <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" name="password">
+                     </div>
+                     <button type="submit" class="registr_btn">Register</button>
+                  </form>
+
+</body>
+
+</html>

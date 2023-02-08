@@ -1,0 +1,80 @@
+.navbar {
+    width: 50rem;
+    /* background-color: #555; */
+    overflow: auto;
+    height: 100%;
+    margin-left: 30rem;
+    margin-top: 10rem;
+    text-align: center;
+  }
+
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: #000;
+  }
+
+  /* Current/active navbar link */
+  .active {
+    background-color: #04AA6D;
+  }
+
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+  div{
+    position: absolute;
+  }
+
+  img{
+    position:relative;
+    width: 1250px;
+    height: 580px;
+    opacity: 5%;
+
+  }
+
+  .para{
+    top: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+  }
+  p{
+    color: aqua;
+  }
+
+
+  .home{
+     background: url(../images/home.jpg);
+  }
+
+
+  .imgg{
+     background-repeat: no-repeat;
+     background-size: auto;
+     background-size:100% 100%;
+     -webkit-filter: blur(4px);
+     -moz-filter: blur(4px);
+     -o-filter: blur(4px);
+     -ms-filter: blur(5px);
+     filter: blur(10px);
+     position: fixed;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     z-index: -1;
+   }
